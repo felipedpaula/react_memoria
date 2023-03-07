@@ -35,7 +35,7 @@ const App = () => {
       for(let i = 0; i < items.length; i++) {
         let pos = -1;
         while (pos < 0 || tmpGrid[pos].item !== null) {
-          pos = Math.floor(Math.random() * (items.length * 12));
+          pos = Math.floor(Math.random() * (items.length * 2));
         } 
         tmpGrid[pos].item = i;
       }
